@@ -1,0 +1,9 @@
+html, body, .content, .map {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  padding-top: 41px;
+}
