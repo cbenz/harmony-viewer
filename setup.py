@@ -31,6 +31,7 @@ setup(
         """,
     include_package_data=True,
     install_requires=[
+        'Biryani1 >= 0.9dev',
         'WebError >= 0.10',
         'WebOb >= 1.1',
         ],
