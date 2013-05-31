@@ -17,8 +17,8 @@ $(function() {
   initApplication({
     $el: $('.map'),
     tileLayer: {
-      attribution: 'TODO Brest métropole',
-      url: '//localhost:8000/{z}/{x}/{y}.png'
+      attribution: 'TODO',
+      url: ${ctx.conf['tile_server_url_scheme'].replace('{project_slug}', req.urlvars['project_slug']) | n, js}
     }
   });
 });

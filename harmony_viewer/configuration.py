@@ -36,6 +36,7 @@ def load_configuration(global_conf, app_conf):
             'projects_base_dir': pipe(cleanup_line, not_none),
             'static_files': pipe(guess_bool, default(False)),
             'static_files_dir': default(os.path.join(app_dir, 'static')),
+            'tile_server_url_scheme': pipe(cleanup_line, not_none),
         },
         default='drop',
         drop_none_values=False,

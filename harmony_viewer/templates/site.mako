@@ -7,23 +7,10 @@ import collections
 
 
 <%def name="topbar()">
-<%
-menu_entries = collections.OrderedDict([
-  ('/projects/create', u'Create a project'),
-  ])
-%>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="/">${ctx.conf['app_name']}</a>
-      <ul class="nav">
-% for url_path, menu_entry_text in menu_entries.iteritems():
-        <li${u' class="active"' if req.path.startswith(url_path) else '' | n}>
-          <a href="${url_path}">${menu_entry_text}</a>
-        </li>
-% endfor
-      </ul>
-
     </div>
   </div>
 </div>

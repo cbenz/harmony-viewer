@@ -1,9 +1,11 @@
-html, body, .content, .map {
-  height: 100%;
+form.leaflet-control-layers-list {
   margin: 0;
-  width: 100%;
 }
 
-body {
-  padding-top: 41px;
+.map {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 42px; /* navbar height */
+  width: 100%;
 }
